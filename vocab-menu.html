@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chinese Vocabulary Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      width: 360px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .level {
+      display: block;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    .radicals { background: #a86fdd; }
+    .hsk1 { background: #4caf50; }
+    .hsk2 { background: #2196f3; }
+    .hsk3 { background: #ff9800; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>📘 Chinese Vocab Test</h1>
+    <p>Chọn cấp độ để luyện từ vựng</p>
+
+    <a class="level radicals" href="quiz-testVocab-html/radicals-Chinese.js">Các bộ thủ</a>
+    <a class="level hsk1" href="quiz-testVocab-html/hsk1-vocab.html">HSK 1</a>
+    <a class="level hsk2" href="hsk2-vocab.html">HSK 2</a>
+    <a class="level hsk3" href="hsk3-vocab.html">HSK 3</a>
+  </div>
+
+</body>
+</html>

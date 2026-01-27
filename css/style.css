@@ -1,0 +1,138 @@
+/* ===== RESET NHẸ ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ===== CARD / CONTAINER CHUNG ===== */
+.container,
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* ===== BUTTON CHỌN LEVEL ===== */
+.btn {
+  display: block;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.basic {
+  background: #4caf50;
+}
+
+.hard {
+  background: #ff9800;
+}
+
+.advanced {
+  background: #f44336;
+}
+
+#progress {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+/* ===== TEST ===== */
+#question {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.hint {
+  color: #595959;
+  font-size: 14px;
+}
+
+.option {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.option:hover {
+  background: #f1f1f1;
+}
+
+.correct {
+  background: #c8e6c9 !important;
+  border-color: #4caf50;
+}
+
+.wrong {
+  background: #ffcdd2 !important;
+  border-color: #f44336;
+}
+
+/* ===== GIẢI THÍCH ===== */
+#explain {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: none;
+}
+
+/* ===== NÚT NEXT ===== */
+button {
+  margin-top: 18px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background: #64a5db;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ===== LINK QUAY LẠI ===== */
+a:not(.btn) {
+  color: #64a5db;
+  text-decoration: none;
+  font-weight: bold;
+}

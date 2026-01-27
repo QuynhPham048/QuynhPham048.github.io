@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>HSK1 Test</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="card" id="app">
+  <h2 id="title"></h2>
+  <div id="progress"></div>
+  <div id="question"></div>
+  <div id="options"></div>
+  <div id="explain"></div>
+  <button id="nextBtn" onclick="nextQuestion()">Tiếp theo</button>
+</div>
+
+<script src="../js/quiz.js"></script>
+
+<script>
+const level = new URLSearchParams(window.location.search).get("level");
+
+const levelMap = {
+  basic: "../quiz-testVocab-data/hsk1-basic.js",
+  hard: "../quiz-testVocab-data/hsk1-hard.js",
+  advanced: "../quiz-testVocab-data/hsk1-advanced.js"
+};
+
+document.getElementById("title").innerText =
+  "HSK 1 – " + level.toUpperCase();
+
+const script = document.createElement("script");
+script.src = levelMap[level];
+script.onload = () => startTest(VOCAB);
+document.body.appendChild(script);
+</script>
+
+
+</body>
+</html>
