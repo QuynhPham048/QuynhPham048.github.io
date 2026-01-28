@@ -164,5 +164,7 @@ const VOCAB = [
 
   { vi: "ngựa", hanzi: "马", pinyin: "mǎ", hanviet: "mã" },
 
-  { vi: "trợ từ nghi vấn (không?)", hanzi: "吗", pinyin: "ma", hanviet: "" }
+  { vi: "trợ từ nghi vấn (không?)", hanzi: "吗", pinyin: "ma", hanviet: "" },
+
+  { vi: "đúng", hanzi: "对", pinyin: "duì", hanviet: "" },
 ];
